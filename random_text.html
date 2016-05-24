@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>random text</title>
+</head>
+<body>
+  <p id="station"></p>
+
+  <script>
+    var stations = [
+        { text: "1" },
+        { text: "2" },
+        { text: "3" },
+        { text: "4" },
+        { text: "5" },
+        { text: "6" },
+        { text: "7" }
+      ];
+
+    (function() {
+        var station = stations[Math.floor(Math.random() * stations.length)];
+
+      document.getElementById("station").innerHTML = station.text;
+        
+    })();
+  </script>
+</body>
+</html>
+
